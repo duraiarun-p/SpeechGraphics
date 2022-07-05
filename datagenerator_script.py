@@ -40,7 +40,7 @@ def wave_with_label_per_record_per_session(file_path,data_path):
     wave_lis=[]# List of wave files per session
     # file_lis=os.listdir(data_path)
     for file in os.listdir(data_path):
-        if not file.startswith("."):
+        if not file.startswith(".") and file.endswith(".wav"):
             wave_lis.append(data_path+'/'+file)
     wave_lis.sort()
     
