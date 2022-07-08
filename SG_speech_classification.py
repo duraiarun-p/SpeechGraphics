@@ -146,7 +146,7 @@ train_loss_per_all_batch_lis=[]
 train_loss_per_batch=[]
 train_loss_per_batch_iter_lis=[]
 wave_lis_total_train_len=len(wave_lis_total_train)//batch_size
-wave_lis_total_train_len=10
+# wave_lis_total_train_len=10 # For code testing purposes
 epochs=100
 # learning_rates=np.logspace(-8, 10,num=epochs) # To identify optimum learning rates
 for epochi in range(epochs):
